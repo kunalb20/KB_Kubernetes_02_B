@@ -2,6 +2,16 @@
 # this is Shebang script using /bin/bash to run commands
 
 ################################################################################################
+# GIT Installation
+################################################################################################
+
+
+dnf install git-all
+apt install git-all
+git --version
+
+
+################################################################################################
 # Jenkins Installation
 ################################################################################################
 
@@ -16,8 +26,6 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   /etc/apt/sources.list.d/jenkins.list > /dev/null  # This will update the repository for jenkins
 
 apt-get update -y # This will update the repository
-
-apt-get install git -y #This 
 
 apt-get install jenkins -y # This will install jenkins
 
