@@ -17,6 +17,8 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 
 apt-get update -y # This will update the repository
 
+apt-get install git -y #This 
+
 apt-get install jenkins -y # This will install jenkins
 
 echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
